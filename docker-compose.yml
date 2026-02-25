@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  anomaly-pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: anomaly_etl_v2
+    volumes:
+      # Mount local cache folder so any new cache files are persisted on the host
+      - ./cache:/app/cache
+    # Override CMD for interactive development:
+    # command: python data_loaders.py

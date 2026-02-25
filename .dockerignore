@@ -1,0 +1,23 @@
+# Virtual environment - not needed in container
+.venv/
+
+# Raw dataset - too large, cache is used instead
+Dataset/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Git files
+.git/
+.gitignore
+
+# Docker files themselves
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Editor settings
+.vscode/
+.idea/
