@@ -5,7 +5,7 @@ from typing import Dict
 
 # Configuration for caching
 CACHE_DIR = os.path.join(os.getcwd(), 'cache')
-DATASET_BASE_PATH = r'Dataset\LBNL_FDD_Data_Sets_DDAHU_all_3\LBNL_FDD_Data_Sets_DDAHU'
+DATASET_BASE_PATH = r'Dataset\LBNL_FDD_Data_Sets_DDAHU'
 
 def load_anomaly_datasets(
     base_path: str = DATASET_BASE_PATH, 
@@ -120,11 +120,11 @@ def load_dataset(file_name: str) -> pd.DataFrame:
 if __name__ == "__main__":
     # Test block to verify loader functionality
     try:
-        # 1. Test batch loading
-        # data = load_anomaly_datasets()
-        # print("\nSummary of loaded datasets:")
-        # for name, df in data.items():
-        #     print(f" - {name}: {len(df)} rows, {len(df.columns)} columns")
+        """# 1. Test batch loading
+        data = load_anomaly_datasets()
+        print("\nSummary of loaded datasets:")
+        for name, df in data.items():
+            print(f" - {name}: {len(df)} rows, {len(df.columns)} columns")"""
         
         # 2. Test single file loading
         test_file = "DualDuct_FaultFree.csv"
