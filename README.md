@@ -1,4 +1,4 @@
-# Avionic Anomaly Detection Pipeline (`Anomoly_etl_v2`)
+# Anomaly Detection Pipeline (`Anomoly_etl_v2`)
 
 A Python-based anomaly detection ETL pipeline for **Dual-Duct Air Handling Unit (DDAHU)** fault detection data. The pipeline loads the pre cached dataset from the sources, applies statistical and machine learning models (OCSVM, MCD) and Deep Neural operators and identifies anomalous operational windows.
 
@@ -8,19 +8,19 @@ A Python-based anomaly detection ETL pipeline for **Dual-Duct Air Handling Unit 
 
 ```
 Anomoly_etl_v2/
-│
-├── data_loaders.py         # Core data loading logic (cache-first)
-├── models.py               # OCSVM, MCD and Deep Neural Operators
-├── requirements.txt        # Python dependencies
-│
-├── setup.ps1               # ⚡ One-click venv setup (PowerShell)
-├── setup.bat               # ⚡ One-click venv setup (Command Prompt)
-│
+│IN DEVELOPMENT
+├── data_loaders.py         # Core data loading logic (cache-first) ( ACTIVE )
+├── models.py               # OCSVM, MCD and Deep Neural Operators ( IN DEV)
+├── requirements.txt        # Python dependencies ( ACTIVE )
+├── setup.ps1               # ⚡ One-click venv setup (PowerShell) ( ACTIVE )
+├── setup.bat               # ⚡ One-click venv setup (Command Prompt) ( ACTIVE )
+├── .gitignore              # Files excluded from Git ( ACTIVE )
+└── README.md               # This file ( ACTIVE )
+│NICE TO HAVE
 ├── Dockerfile              # Container definition
 ├── docker-compose.yml      # One-command container runner
-├── .dockerignore           # Files excluded from Docker build
-├── .gitignore              # Files excluded from Git
-└── README.md               # This file
+|__ .dockerignore           # Files excluded from Docker build
+
 ```
 
 > **Generated locally (not in Git):**
@@ -77,7 +77,7 @@ python data_loaders.py
 
 ### Option B: Docker (Containerized)
 
-Use this to run the pipeline in an isolated container — no manual environment setup needed. **Recommended for the work laptop.**
+Use this to run the pipeline in an isolated container — no manual environment setup needed. **Nice to Have.**
 
 ```bash
 # 1. Clone the repository
