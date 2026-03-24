@@ -15,7 +15,8 @@ Anomaly_etl_v2/
 ├── data_transformers.py    # `segment_loaded_data` and `kernalise_segment` / `apply_kernalisation`
 │
 │ ── IN DEVELOPMENT ──
-├── models.py               # Fourier Neural Operator (FNO) layers — SpectralConv2d, FourierLayer
+├── naive_models.py         # Classical Models (One Class SVM , Fast MCD) for baselines
+├── deep_models.py          # Deep Algorithms ( Neural Operators , Deep SVDD)
 ├── requirements.txt        # Python dependencies
 ├── setup.bat               # One-click venv setup (Command Prompt)
 │
